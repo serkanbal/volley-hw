@@ -14,7 +14,7 @@ creator:
 ## Exercise
 
 After Retrofit, the next most popular neworking library for Android is Google's Volley.
-In this optional homework, you will use the [Volley documentation](https://developer.android.com/training/volley/index.html) as a guide and implement Volley to make network calls to Walmart's API.
+In this homework, you will use the [Volley documentation](https://developer.android.com/training/volley/index.html) as a guide and implement Volley to make network calls to Walmart's API.
 
 #### Requirements
 
