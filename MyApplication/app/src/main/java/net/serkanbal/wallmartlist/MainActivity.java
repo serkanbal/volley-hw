@@ -37,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
         mButtonXboxOne = (Button) findViewById(R.id.buttonxboxone);
         mButtonWiiU = (Button) findViewById(R.id.buttonwiiu);
 
+        mRecyclerView = (RecyclerView) findViewById(recyclerview);
+
+        LinearLayoutManager linearLayoutManager =
+                new LinearLayoutManager(MainActivity.this,
+                        LinearLayoutManager.VERTICAL,false);
+
+        mRecyclerView.setLayoutManager(linearLayoutManager);
+
         mButtonPS4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,14 +90,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
-                mRecyclerView = (RecyclerView) findViewById(recyclerview);
-
-                LinearLayoutManager linearLayoutManager =
-                        new LinearLayoutManager(MainActivity.this,
-                                LinearLayoutManager.VERTICAL,false);
-
-                mRecyclerView.setLayoutManager(linearLayoutManager);
 
                 mAdapter =
                         new SearchResultRecyclerViewAdapter(mList);
